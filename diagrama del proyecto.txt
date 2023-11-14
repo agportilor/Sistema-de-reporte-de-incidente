@@ -1,0 +1,78 @@
+
+             Cliente              
+
+ - id: int                        
+ - razonSocial: String           
+ - cuit: String                  
+ - serviciosContratados: List<Servicio> 
+
+
+
+             Servicio             
+
+ - id: int                        
+ - nombre: String                 
+
+
+
+             Tecnico               
+
+ - id: int                        
+ - nombre: String                 
+ - especialidades: List<Especialidad> 
+ - tiempoEstimadoPorTipo: Map<TipoProblema, Integer> 
+ - medioPreferidoNotificacion: MedioNotificacion 
+
+
+
+           Especialidad            
+
+ - id: int                        
+ - nombre: String                 
+
+
+
+           TipoProblema            
+
+ - id: int                        
+ - nombre: String                 
+ - tiempoMaximoResolucion: int    
+ - especialidades: List<Especialidad> 
+
+
+
+           Incidente               
+
+ - id: int                       
+ - cliente: Cliente               
+ - servicio: Servicio             
+ - descripcionProblema: String    
+ - tipoProblema: TipoProblema      
+ - tecnicoAsignado: Tecnico       
+ - fechaCreacion: Date            
+ - fechaResolucion: Date          
+ - estado: EstadoIncidente        
+
+
+
+     EstadoIncidente (Enum)        
+
+ - ABIERTO                        
+ - EN_PROCESO                     
+ - RESUELTO                       
+
+
+
+   MedioNotificacion (Enum)        
+
+ - EMAIL                          
+ - WHATSAPP                       
+
+
+La clase Cliente tiene una relación con la clase Servicio, ya que un cliente puede tener varios servicios contratados.
+
+La clase Tecnico tiene una relación con la clase Especialidad, ya que un técnico puede tener múltiples especialidades.
+
+La clase Tecnico también tiene una relación con la clase TipoProblema a través del mapa tiempoEstimadoPorTipo, que asigna un tiempo estimado de resolución a cada tipo de problema.
+
+La clase Incidente está relacionada con las clases Cliente, Servicio, TipoProblema y Tecnico, lo que permite gestionar la asignación de incidentes a técnicos, el seguimiento de su estado y la relación con los clientes y servicios correspondientes.
