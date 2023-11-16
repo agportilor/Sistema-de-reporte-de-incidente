@@ -1,8 +1,8 @@
-package org.example;
+package org.example.Modelos;
 
 import java.util.List;
 import java.util.Map;
-import lombok.AccessLevel;
+
 import lombok.Getter;
 import lombok.Setter;
 

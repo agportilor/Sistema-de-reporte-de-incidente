@@ -1,7 +1,7 @@
-package org.example;
+package org.example.Modelos;
 
 import java.util.List;
-import lombok.AccessLevel;
+
 import lombok.Getter;
 import lombok.Setter;
 

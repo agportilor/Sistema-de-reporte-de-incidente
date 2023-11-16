@@ -1,10 +1,7 @@
-package org.example;
+package org.example.Modelos;
 
-import java.sql.Date;
-import java.sql.Time;
 import java.time.LocalDateTime;
-import java.time.Clock;
-import lombok.AccessLevel;
+
 import lombok.Getter;
 import lombok.Setter;
 
