@@ -8,12 +8,28 @@ import lombok.Setter;
 @Setter
 public class Especialidad {
     private int id;
-    private String nombre;
+    public String nombre; // NOMBRE DESCRIPTIVO DE LA ESPECIALIDAD
 
-    // Constructor
+    public String getNombre() {
+        return nombre;
+    }
 
-    public Especialidad(int id, String nombre) {
-        this.id = id;
+    public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getMitigacion() {
+        return mitigacion;
+    }
+
+    public void setMitigacion(String mitigacion) {
+        this.mitigacion = mitigacion;
+    }
+
+    public String mitigacion; // PROBLEMA QUE PUEDE SOLUCIONAR ESTA ESPECIALIDAD
+    // Constructor
+    public Especialidad(String nombre, String mitigacion) {
+        this.nombre = nombre;
+        this.mitigacion = mitigacion;
     }
 }

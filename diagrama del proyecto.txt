@@ -47,7 +47,7 @@
  - cliente: Cliente               
  - servicio: Servicio             
  - descripcionProblema: String    
- - tipoProblema: TipoProblema      
+ - problema: TipoProblema
  - tecnicoAsignado: Tecnico       
  - fechaCreacion: Date            
  - fechaResolucion: Date          
