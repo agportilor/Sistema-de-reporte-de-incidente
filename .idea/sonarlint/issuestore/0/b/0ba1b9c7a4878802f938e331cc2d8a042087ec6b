@@ -1,6 +1,0 @@
-
-E	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ
-R
-java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8èóŠİº1
-O
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8èóŠİº1

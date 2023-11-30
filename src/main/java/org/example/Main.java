@@ -1,10 +1,11 @@
 package org.example;
 
-import java.io.IOException;
-import java.sql.SQLException;
+import Controllers.ControllerInicializar;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        ControllerInicializar.inicializar();
+
     }
 }
